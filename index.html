@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pure Güzellik | Cilt Bakımı, Lazer ve Güzellik Merkezi</title>
+  <meta name="description" content="Pure Güzellik: cilt bakımı, lazer epilasyon, kalıcı makyaj ve kişiye özel güzellik uygulamaları.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ÜST BAR -->
+  <header class="site-header" id="header">
+    <a class="logo" href="#top" aria-label="Pure Güzellik ana sayfa">
+      <span class="logo__mark">PURE</span>
+      <span class="logo__sub">Güzellik Merkezi</span>
+    </a>
+    <button class="menu-toggle" id="menuOpen" aria-haspopup="dialog" aria-controls="menu">Menü</button>
+  </header>
+
+  <!-- TAM EKRAN MENÜ -->
+  <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Ana menü" aria-hidden="true">
+    <button class="menu__close" id="menuClose" aria-label="Menüyü kapat">
+      <svg viewBox="0 0 30 30" width="30" height="30" aria-hidden="true"><path d="M9 9l12 12M21 9L9 21" stroke="currentColor" stroke-width="1" fill="none"/></svg>
+    </button>
+    <div class="menu__inner">
+      <div class="menu__nav">
+        <p class="label">Menü</p>
+        <ul>
+          <li><a href="#hizmetler">Hizmetler</a></li>
+          <li><a href="#uygulamalar">Uygulamalar</a></li>
+          <li><a href="#yaklasim">Hakkımızda</a></li>
+          <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+      </div>
+      <div class="menu__cta">
+        <a class="btn btn--light" href="#randevu">Randevu al →</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- 1. HERO -->
+    <section class="hero dark-section">
+      <div class="hero__content" id="heroContent">
+        <p class="label anim anim--up" style="--d:.4s">Cilt Bakımı • Lazer • Kalıcı Makyaj • Masaj</p>
+        <h1 class="h1 anim anim--up" style="--d:.4s">Cildinize <em>özel bakım</em>,<br>kendinize ayırdığınız zaman.</h1>
+        <h2 class="sub anim anim--fade" style="--d:.6s">Cildinizi tanıyan, ihtiyacınıza göre planlanan<br>ve sonucu gözle görülen uygulamalar.</h2>
+        <div class="hero__actions">
+          <a class="btn btn--light anim anim--fade" style="--d:.6s" href="#hizmetler">Hizmetleri gör →</a>
+          <a class="btn btn--light anim anim--fade" style="--d:.6s" href="#randevu">Randevu al →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. GİRİŞ + KAYAN ŞERİT -->
+    <section class="intro">
+      <div class="intro__head">
+        <p class="label">Uygulamalar &amp; Bakımlar</p>
+        <h2 class="h2">Her cilde <em>ayrı bir plan</em>.</h2>
+        <p class="sub2">İlk görüşmeden bakım sonrasına kadar,<br>her adımı sizinle birlikte planlıyoruz.</p>
+      </div>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span class="m m--serif">Cilt Bakımı</span>
+          <span class="m m--wide">LAZER</span>
+          <span class="m m--italic">Kalıcı Makyaj</span>
+          <span class="m m--caps">Kaş &amp; Kirpik</span>
+          <span class="m m--serif">Hydrafacial</span>
+          <span class="m m--wide">MASAJ</span>
+          <span class="m m--italic">Manikür</span>
+          <span class="m m--caps">Bölgesel İncelme</span>
+          <span class="m m--serif">Cilt Bakımı</span>
+          <span class="m m--wide">LAZER</span>
+          <span class="m m--italic">Kalıcı Makyaj</span>
+          <span class="m m--caps">Kaş &amp; Kirpik</span>
+          <span class="m m--serif">Hydrafacial</span>
+          <span class="m m--wide">MASAJ</span>
+          <span class="m m--italic">Manikür</span>
+          <span class="m m--caps">Bölgesel İncelme</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. GALERİ -->
+    <section class="gallery">
+      <div class="gallery__col">
+        <div class="reveal gallery__a"><img src="assets/img/galeri-1.jpg" alt="Çilli bir yüzün yakın çekimi, yanağında beyaz çiçek" loading="lazy" width="1052" height="1396"></div>
+      </div>
+      <div class="gallery__col">
+        <div class="reveal gallery__b" id="parallaxImg"><img src="assets/img/galeri-2.jpg" alt="Bej zeminde iki şeffaf serum damlası" loading="lazy" width="1052" height="800"></div>
+        <div class="reveal gallery__c"><img src="assets/img/galeri-3.jpg" alt="Bej zeminde krem dokusu" loading="lazy" width="1052" height="1396"></div>
+      </div>
+    </section>
+
+    <!-- 4. YAPIŞKAN GÖRSEL + METİNLER -->
+    <section class="focus" id="yaklasim">
+      <div class="focus__sticky" id="focusSticky">
+        <div class="reveal"><img src="assets/img/odak.jpg" alt="Yüzüne krem uygulayan kadın" loading="lazy" width="1100" height="1170"></div>
+      </div>
+
+      <div class="focus__text focus__text--left">
+        <p class="label">Kimler için</p>
+        <h2 class="h2">Cildine, bedenine ve kendine <em>gerçekten iyi bakmak</em> isteyenler için.</h2>
+        <h3 class="sub2">Aynadaki görüntünüzle barışık, kendinizi iyi hissettiğiniz günler için buradayız.</h3>
+        <p class="body body--narrow">
+          ❊ İlk kez profesyonel bakım alacaksınız ve doğru yerden başlamak istiyorsunuz.<br>
+          ❊ Denediğiniz bakımlar işe yaramadı; cildinizi gerçekten tanıyan bir uzman arıyorsunuz.<br>
+          ❊ Özel bir güne hazırlanıyorsunuz ve sonucu şansa bırakmak istemiyorsunuz.
+        </p>
+      </div>
+
+      <div class="focus__text focus__text--right">
+        <p class="label">Yaklaşımımız</p>
+        <h2 class="h2">Cildinize, <em>ihtiyacınıza</em> ve <em>hayat temponuza</em> göre planlanan bakım.</h2>
+        <h3 class="sub2">Yalnızca bir uygulama yapmıyoruz. Sizinle birlikte sürdürülebilir bir bakım rutini kuruyoruz.</h3>
+        <p class="body body--narrow">
+          ❊ Önce cildinizi analiz ediyor, ihtiyacını birlikte belirliyoruz.<br><br>
+          ❊ Uygulamayı cilt tipinize ve hassasiyetinize göre kişiselleştiriyoruz.<br><br>
+          ❊ Bakım sonrasında evde uygulayabileceğiniz rutini sizinle paylaşıyoruz.<br><br>
+          Farkı yaratan, ilk görüşmeden bakım sonrasına uzanan bu bütünlüklü bakış.
+        </p>
+      </div>
+    </section>
+
+    <!-- 5. YÖNTEM -->
+    <section class="method">
+      <p class="label">Yöntemimiz</p>
+      <h2 class="mega">Pure Bakım Ritüeli</h2>
+      <h3 class="sub">Dinle. Analiz et. Kişiselleştir.</h3>
+      <p class="body body--center">İyi bir bakım yalnızca doğru ürünle değil, doğru sırayla ve doğru ellerle yapılır. Pure Bakım Ritüeli; cildinizi dinleyen, ihtiyacını ölçen ve her seansı size göre biçimlendiren çalışma yöntemimizdir.</p>
+    </section>
+
+    <!-- 6. HİZMETLER -->
+    <section class="services" id="hizmetler">
+      <div class="services__head">
+        <p class="label">Hizmetlerimiz</p>
+        <h2 class="h2">Hazır paket yok.<br>Yalnızca <em>size özel plan</em>.</h2>
+        <h3 class="sub2">İhtiyacınız ne olursa olsun; cildinize, bütçenize ve zamanınıza göre planlanmış bir bakım.</h3>
+      </div>
+      <div class="services__grid">
+        <article class="card">
+          <div class="reveal card__img"><img src="assets/img/hizmet-1.jpg" alt="Yanağa krem uygulaması" loading="lazy" width="800" height="1000"></div>
+          <p class="label">Cilt</p>
+          <h3 class="h3">Cilt Bakımı</h3>
+          <p class="sub2">Temizlenen, nemlenen ve ışıldayan bir cilt.</p>
+        </article>
+        <article class="card">
+          <div class="reveal card__img"><img src="assets/img/hizmet-2.jpg" alt="Ciltte lazer uygulaması" loading="lazy" width="800" height="1000"></div>
+          <p class="label">Lazer</p>
+          <h3 class="h3">Lazer Epilasyon</h3>
+          <p class="sub2">Pürüzsüzlüğü kalıcı hale getirin.</p>
+        </article>
+        <article class="card">
+          <div class="reveal card__img"><img src="assets/img/hizmet-3.jpg" alt="Dudakların yakın çekimi" loading="lazy" width="800" height="1000"></div>
+          <p class="label">Makyaj</p>
+          <h3 class="h3">Kalıcı Makyaj</h3>
+          <p class="sub2">Her sabah hazır uyanın.</p>
+        </article>
+      </div>
+      <div class="services__more"><a class="btn btn--accent" href="#randevu">Tüm hizmetleri keşfet →</a></div>
+    </section>
+
+    <!-- 7. UYGULAMALAR -->
+    <section class="works" id="uygulamalar">
+      <div class="works__head">
+        <p class="label">Uygulamalar</p>
+        <h2 class="h2">En çok tercih edilen <em>bakım</em> ve <em>uygulamalarımız</em>.</h2>
+        <p class="sub2">Pek çok farklı uygulama sunuyoruz; uzmanlığımızın merkezinde ise cilt sağlığı ve doğal görünüm var.</p>
+      </div>
+
+      <div class="works__row">
+        <div class="works__col works__col--40 works__col--spread">
+          <article class="work">
+            <div class="reveal work__img work__img--s pos-lower"><img src="assets/img/uygulama-1.jpg" alt="Cihazla yapılan cilt bakımı seansı" loading="lazy" width="922" height="710"></div>
+            <div class="work__meta"><p class="work__name">Hydrafacial</p><a class="btn btn--accent" href="#randevu">Detayları gör</a></div>
+          </article>
+          <article class="work">
+            <div class="reveal work__img work__img--s pos-upper"><img src="assets/img/uygulama-2.jpg" alt="Kaş uygulaması yapılan kadın" loading="lazy" width="922" height="710"></div>
+            <div class="work__meta"><p class="work__name">Kaş Laminasyonu</p><a class="btn btn--accent" href="#randevu">Detayları gör</a></div>
+          </article>
+        </div>
+        <div class="works__col works__col--50">
+          <article class="work work--fill">
+            <div class="reveal work__img work__img--fill"><img src="assets/img/uygulama-3.jpg" alt="Profesyonel yüz bakımı" loading="lazy" width="1152" height="1780"></div>
+            <div class="work__meta"><p class="work__name">Medikal Cilt Bakımı</p><a class="btn btn--accent" href="#randevu">Detayları gör</a></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="works__row">
+        <div class="works__col works__col--60">
+          <article class="work work--fill">
+            <div class="reveal work__img work__img--l"><img src="assets/img/uygulama-4.jpg" alt="Lazer epilasyon seansı" loading="lazy" width="1382" height="1170"></div>
+            <div class="work__meta"><p class="work__name">Lazer Epilasyon</p><a class="btn btn--accent" href="#randevu">Detayları gör</a></div>
+          </article>
+        </div>
+        <div class="works__col works__col--30 works__col--spread">
+          <article class="work">
+            <div class="reveal work__img work__img--xs pos-upper"><img src="assets/img/uygulama-5.jpg" alt="İpek kirpik uygulaması" loading="lazy" width="692" height="450"></div>
+            <div class="work__meta"><p class="work__name">İpek Kirpik</p><a class="btn btn--accent" href="#randevu">Detayları gör</a></div>
+          </article>
+          <article class="work">
+            <div class="reveal work__img work__img--xs"><img src="assets/img/uygulama-6.jpg" alt="Sırt masajı" loading="lazy" width="692" height="450"></div>
+            <div class="work__meta"><p class="work__name">Aromaterapi Masajı</p><a class="btn btn--accent" href="#randevu">Detayları gör</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. NEDEN PURE -->
+    <section class="values">
+      <div class="values__head">
+        <p class="label">Neden Pure</p>
+        <h2 class="h2">Güveninizi <em>özenle</em><br>kazanan bir merkez.</h2>
+      </div>
+      <div class="values__grid">
+        <div class="value io io--zoom" style="--d:.2s">
+          <p class="value__word">hijyen.</p>
+          <p class="value__no">01</p>
+          <p class="value__desc">Her seansta steril ekipman</p>
+          <p class="value__tag">Tek kullanımlık</p>
+        </div>
+        <div class="value io io--zoom" style="--d:.3s">
+          <p class="value__word">uzmanlık.</p>
+          <p class="value__no">02</p>
+          <p class="value__desc">Alanında eğitimli ekip</p>
+          <p class="value__tag">Sertifikalı</p>
+        </div>
+        <div class="value io io--zoom" style="--d:.4s">
+          <p class="value__word">teknoloji.</p>
+          <p class="value__no">03</p>
+          <p class="value__desc">Güncel ve onaylı cihazlar</p>
+          <p class="value__tag">Yeni nesil</p>
+        </div>
+        <div class="value io io--zoom" style="--d:.6s">
+          <p class="value__word">özen.</p>
+          <p class="value__no">04</p>
+          <p class="value__desc">Size ayrılmış zaman ve ilgi</p>
+          <p class="value__tag">Kişiye özel</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. YORUMLAR -->
+    <section class="reviews">
+      <p class="label">Yorumlar</p>
+      <div class="slider" id="slider">
+        <div class="slider__track">
+          <article class="slide">
+            <div class="slide__img"><img src="assets/img/yorum-1.jpg" alt="Yüz masajı" loading="lazy" width="1206" height="1400"></div>
+            <div class="slide__body">
+              <p class="stars" aria-label="5 üzerinden 5 yıldız">★★★★★</p>
+              <blockquote>“ İlk seanstan itibaren cildimdeki farkı gördüm. Her şeyi sabırla anlattılar, hiçbir aşamada kendimi yalnız hissetmedim. Artık düzenli bakımımı başka bir yerde düşünemiyorum. ”</blockquote>
+              <p class="slide__who"><span>Örnek Yorum</span><strong>Cilt Bakımı</strong></p>
+              <a class="btn btn--accent" href="#uygulamalar">Uygulamayı gör</a>
+            </div>
+          </article>
+          <article class="slide">
+            <div class="slide__img"><img src="assets/img/yorum-2.jpg" alt="Bacakta lazer epilasyon" loading="lazy" width="1206" height="1400"></div>
+            <div class="slide__body">
+              <p class="stars" aria-label="5 üzerinden 5 yıldız">★★★★★</p>
+              <blockquote>“ Lazer konusunda çok tedirgindim. Ekip her adımda bilgi verdi, seanslar hem konforlu hem de çok hijyenikti. Sonuçtan fazlasıyla memnunum. ”</blockquote>
+              <p class="slide__who"><span>Örnek Yorum</span><strong>Lazer Epilasyon</strong></p>
+              <a class="btn btn--accent" href="#uygulamalar">Uygulamayı gör</a>
+            </div>
+          </article>
+          <article class="slide">
+            <div class="slide__img"><img src="assets/img/yorum-3.jpg" alt="Cildin yakın çekimi" loading="lazy" width="1206" height="1400"></div>
+            <div class="slide__body">
+              <p class="stars" aria-label="5 üzerinden 5 yıldız">★★★★★</p>
+              <blockquote>“ Kalıcı makyajda en büyük korkum yapay durmasıydı. Yüzüme en uygun şekli birlikte belirledik; sonuç tam istediğim gibi doğal oldu. ”</blockquote>
+              <p class="slide__who"><span>Örnek Yorum</span><strong>Kalıcı Makyaj</strong></p>
+              <a class="btn btn--accent" href="#uygulamalar">Uygulamayı gör</a>
+            </div>
+          </article>
+        </div>
+        <div class="slider__dots" role="tablist" aria-label="Yorumlar"></div>
+      </div>
+    </section>
+
+    <!-- 10. RANDEVU ÇAĞRISI -->
+    <section class="cta dark-section" id="randevu">
+      <p class="label">Tanışalım</p>
+      <h2 class="h2">Ücretsiz <em>ön görüşme</em>,<br>hiçbir zorunluluk yok.</h2>
+      <h3 class="sub2">Cildinizi tanımak ve size uygun bakımı birlikte belirlemek için 20 dakika.</h3>
+      <a class="btn btn--light" href="#iletisim">Randevu oluştur →</a>
+      <p class="note">aynı gün içinde dönüş</p>
+    </section>
+  </main>
+
+  <!-- ALT BİLGİ -->
+  <footer class="footer" id="iletisim">
+    <div class="footer__logo">
+      <span class="logo__mark">PURE</span>
+      <span class="logo__sub">Güzellik Merkezi</span>
+    </div>
+    <nav class="footer__nav" aria-label="Alt menü">
+      <a href="#hizmetler">Hizmetler</a>
+      <a href="#uygulamalar">Uygulamalar</a>
+      <a href="#yaklasim">Yöntem</a>
+      <a href="#yaklasim">Hakkımızda</a>
+      <a href="#iletisim">İletişim</a>
+    </nav>
+    <div class="footer__cta">
+      <a class="btn btn--accent" href="#randevu">Randevu oluştur →</a>
+      <p class="note note--accent">aynı gün içinde dönüş – hiçbir zorunluluk yok</p>
+    </div>
+    <p class="body footer__about">Pure Güzellik; cildine ve kendine özen göstermek isteyenler için kişiye özel cilt bakımı, lazer ve güzellik uygulamaları sunar.</p>
+    <p class="body footer__contact">
+      <a href="mailto:merhaba@ornek.com">merhaba@ornek.com</a><br>
+      <a href="tel:+900000000000">+90 (000) 000 00 00</a>
+    </p>
+    <div class="footer__social">
+      <a href="#" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="#" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.4A8.5 8.5 0 1 1 8 19.4z"/><path d="M9 8.5c0 3 2.5 6 6 6.5l1.2-1.6-2-1-1 .8a4 4 0 0 1-2-2.300l.8-1-1-2z" fill="currentColor" stroke="none"/></svg>
+      </a>
+    </div>
+    <p class="body footer__legal">
+      <span>© Pure Güzellik</span><span>Tüm hakları saklıdır</span><a href="#">KVKK Aydınlatma Metni</a><a href="#">Gizlilik Politikası</a>
+    </p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
